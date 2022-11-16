@@ -27,12 +27,9 @@ export const UseReducerHook = () => {
         <div>
             <h2>useReducer</h2>
             {state.names.map((el, indx) => (
-                <div
-                    key={indx}
-                >
+                <div key={indx} >
                     {el}
                 </div>
-
             ))}
             <input
                 type="text"
@@ -42,7 +39,6 @@ export const UseReducerHook = () => {
             />
             <div>You just typed: {state.name}</div>
             <button onClick={() => dispatch({ type: 'ADD_NAME', payload: state.names.push(state.name) })}>Add name</button>
-
         </div>
     )
 }
