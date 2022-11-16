@@ -10,7 +10,7 @@ export const UseReducerHook = () => {
                     ...state,
                     name: action.payload
                 };
-            case 'ADD-NAME':
+            case 'ADD_NAME':
                 return {
                     ...state,
                     names: [...state.names, action.payload],
@@ -38,7 +38,7 @@ export const UseReducerHook = () => {
                 placeholder="Enter name"
             />
             <div>You just typed: {state.name}</div>
-            <button onClick={() => dispatch({ type: 'ADD_NAME', payload: state.names.push(state.name) })}>Add name</button>
+            <button onClick={() => dispatch({ type: 'ADD_NAME', payload: state.name })}>Add name</button>
         </div>
     )
 }
