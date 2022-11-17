@@ -1,7 +1,7 @@
 import React from 'react'
 import { useReducer } from 'react';
 
-export const UseReducerHook = () => {
+const UseReducerHook = () => {
 
     function UserForm() {
         const [state, dispatch] = useReducer((state, action) => {
@@ -16,7 +16,7 @@ export const UseReducerHook = () => {
 
         return (
             <div>
-                <h3>User data form</h3>
+                <h4>User data form</h4>
                 <input
                     type="text"
                     value={state.firstName}
@@ -57,7 +57,7 @@ export const UseReducerHook = () => {
 
         return (
             <div>
-                <h3>Users names list</h3>
+                <h4>Users names list</h4>
                 {state.names.map((el, indx) => (
                     <div key={indx} >
                         {el}
@@ -77,7 +77,7 @@ export const UseReducerHook = () => {
 
     return (
         <div>
-            <h2>useReducer</h2>
+            <h2>useReducer hook</h2>
             <UserList />
             <UserForm />
         </div>
