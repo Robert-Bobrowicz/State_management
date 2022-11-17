@@ -8,7 +8,10 @@ function UseMemo() {
     );
 
     const [names] = useState(["Kasia", "Ania", "Ola", "Nina"]);
-    const sortedNames = useMemo(() => [...names].sort(), [names]);
+    const sortedNames = useMemo(
+        () => [...names].sort(),
+        [names]
+    );
 
     return (
         <div>
