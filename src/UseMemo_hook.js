@@ -7,7 +7,7 @@ function UseMemo() {
         [numbers]
     );
 
-    const [names] = useState(["Kasia", "Ania", "Ola", "Nina"]);
+    const [names] = useState(["Kasia", "Ania", "Ola", "Nina", "Sandra", "Julia", "Marek", "Janek", "Pjoter", "Paweł", "King", "Rysio"]);
     const sortedNames = useMemo(
         () => [...names].sort(),
         [names]
@@ -16,12 +16,12 @@ function UseMemo() {
     return (
         <div>
             <h2>useMemo hook</h2>
-            <h4>Calculating huge arrays</h4>
+            <h4>Calculating huge arrays and caching</h4>
             <div>Array of numbers: {numbers.join(", ")}</div>
             <div>Total: {total}</div>
-            <h4>Sorting huge amount of data</h4>
-            <div>Array of user names: {names.join(", ")}</div>
-            <div>Sorted names: {sortedNames.join(", ")}</div>
+            <h4>Sorting huge amount of data and caching</h4>
+            <div>Array of user names: [ {names.join(", ")} ]</div>
+            <div>Sorted names: [ {sortedNames.join(", ")} ]</div>
         </div>
     )
 }
