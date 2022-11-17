@@ -5,10 +5,10 @@ export const UseReducerHook = () => {
 
     function UserForm() {
         const [state, dispatch] = useReducer((state, action) => {
-            return {
+            return ({
                 ...state,
                 ...action
-            }
+            })
         }, {
             firstName: '',
             lastName: ''
@@ -16,6 +16,7 @@ export const UseReducerHook = () => {
 
         return (
             <div>
+                <h3>User data form</h3>
                 <input
                     type="text"
                     value={state.firstName}
@@ -56,7 +57,7 @@ export const UseReducerHook = () => {
 
         return (
             <div>
-                <h2>useReducer</h2>
+                <h3>Users names list</h3>
                 {state.names.map((el, indx) => (
                     <div key={indx} >
                         {el}
@@ -76,6 +77,7 @@ export const UseReducerHook = () => {
 
     return (
         <div>
+            <h2>useReducer</h2>
             <UserList />
             <UserForm />
         </div>
