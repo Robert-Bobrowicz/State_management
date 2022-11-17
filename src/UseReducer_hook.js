@@ -82,7 +82,7 @@ export const UseReducerHook = () => {
             <UserForm />
         </div>
     )
-}
+};
 
 export default UseReducerHook;
 
