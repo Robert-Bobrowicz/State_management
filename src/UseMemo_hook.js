@@ -7,7 +7,7 @@ function UseMemo() {
         [numbers]
     );
 
-    const [names] = useState(["Kasia", "Ania", "Ola", "Nina", "Sandra", "Julia", "Marek", "Janek", "Pjoter", "Paweł", "King", "Rysio"]);
+    const [names] = useState(["Kasia", "Ania", "Ola", "Nina", "Sandra", "Julia", "Marek", "Janek", "Pjoter", "Paweł", "King", "Rysio", "Magda", "Anastazja", "Kala", "Olek", "Adam", "Sasza"]);
     const sortedNames = useMemo(
         () => [...names].sort(),
         [names]
