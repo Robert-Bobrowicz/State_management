@@ -1,10 +1,10 @@
-function UseCalback() {
-    
+function UseCallback() {
+
     return (
         <div>
-            Use callback
+            <h2>useCallback hook</h2>
         </div>
     )
 }
 
-export default UseCalback;
+export default UseCallback;
