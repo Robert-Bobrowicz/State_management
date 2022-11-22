@@ -5,6 +5,7 @@ import UseMemo from './UseMemo_hook';
 import UseCallback from './UseCallback_hook';
 
 function App() {
+  console.log("Render app");
   return (
     <div className="App">
       <h1>State management</h1>
