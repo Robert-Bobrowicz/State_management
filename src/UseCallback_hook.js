@@ -5,9 +5,6 @@ function UseCallback() {
     const [minusOne, setMinusOne] = useState(0);
 
     const [names] = useState(["Kasia", "Ania", "Ola", "Nina", "Sandra", "Julia", "Marek", "Janek", "Pjoter", "Paweł", "King", "Rysio", "Magda", "Anastazja", "Kala", "Olek", "Adam", "Sasza"]);
-    // const sortedNames = useMemo(
-    //     () => [...names].sort(sortFunc), [names]
-    // );
 
     const sortFunc = (a, b) => a.localeCompare(b) * -1; //sotowanie odwrotne
 
